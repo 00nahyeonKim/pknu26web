@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        height: 80vh;
+      }
+
+      td {
+        border: 1px solid #ccc;
+      }
+
+      .header,
+      .footer {
+        height: 15%;
+        background-color: cadetblue;
+      }
+
+      .footer {
+        height: 10%;
+      }
+
+      .nav {
+        height: 5%;
+        text-align: center;
+      }
+      .content {
+        height: 70%;
+      }
+
+      .footer {
+        height: 15%;
+      }
+
+      .center {
+        width: 60%;
+        background-color: antiquewhite;
+        text-align: center;
+      }
+
+      #title {
+        font-size: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블 응용</h1>
+    <hr />
+    <a href="index.html">홈으로</a>
+    <!-- table>(tr>td*3)*3 -->
+    <table>
+      <tr class="header">
+        <td colspan="3" id="title">Naver</td>
+      </tr>
+
+      <tr class="nav">
+        <td colspan="3">
+          메일 | 카페 | 블로그 | 스토어 | 뉴스 | 증권 | 부동산 | 지도 | 웹툰 |
+          치지직
+        </td>
+      </tr>
+
+      <tr class="content">
+        <td>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAxNzA3MDNfMjMy%2FMDAxNDk5MDUxODE1NjM2.-__eFY-x-lSvDe-B_fF1OxKfzq4q_lpDsSkcJoQSi_cg.CEdRjk52V_pOOVjOvWZCtpPbor2DtLaT6D2RbVT-1Awg.JPEG.coolsmell55%2FIMG_9030.jpg&type=a340"
+          />
+        </td>
+        <td class="center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sit
+          dolor inventore, soluta libero minima voluptates recusandae et error
+          aliquam assumenda quibusdam iste similique harum id nihil facere?
+          Expedita, non. Fugiat, at accusantium consequuntur aperiam animi vero
+          necessitatibus, odio dolore dignissimos laudantium quae voluptate
+          numquam pariatur incidunt cumque id sapiente, sint reprehenderit atque
+          rerum omnis maiores? Omnis esse animi obcaecati. Ipsa quia doloribus
+          molestiae cumque? Fuga itaque nihil, quaerat veniam, odit, hic fugiat
+          iste sit voluptates rem voluptas? Doloribus tempora atque natus fugit!
+          Autem porro commodi at facilis? Harum, in.
+        </td>
+        <td>
+          <img
+            src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Ftimg.humoruniv.com%2Fthumb_crop_resize.php%3Furl%3Dhttp%3A%2F%2Fdown.humoruniv.com%2Fhwiparambbs%2Fdata%2Fpdswait%2Fa_6026367660_4630786bd3cfeb626f3b2327a6363b4bbd09c4fd.jpg%3FSIZE%3D800x1066&type=a340"
+          />
+        </td>
+      </tr>
+      <tr class="footer">
+        <td colspan="3"></td>
+      </tr>
+    </table>
+  </body>
+</html>
