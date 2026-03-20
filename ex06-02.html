@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인창</title>
+  </head>
+  <style>
+    body {
+      background-color: cornsilk;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+      width: 300px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    input {
+      width: 93%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: lightblue;
+      color: white;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: cadetblue;
+    }
+    button:last-of-type {
+      background-color: mistyrose;
+    }
+    button:last-of-type:hover {
+      background-color: lightcoral;
+    }
+  </style>
+  <body>
+    <h1>로그인 디자인</h1>
+    <hr />
+    <a href="index.html">홈으로</a><br />
+
+    <div class="container">
+      <div class="login-container">
+        <h2>로그인</h2>
+        <hr />
+        <form action="#" method="post">
+          <label for="id">ID:</label>
+          <input type="text" id="id" placeholder="아이디입력" />
+          <br />
+          <label for="pw">PW:</label>
+          <input type="text" id="pw" placeholder="패스워드입력" />
+          <button>로그인</button>
+          <hr />
+          <small>회원이 아니신 분은 회원가입을 해주세요.</small>
+          <button>회원가입</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Layout</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+      }
+
+      .header {
+        height: 10%;
+        padding-bottom: 15px;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+      }
+
+      .nav {
+        height: 5%;
+        background-color: yellow;
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+      }
+
+      .left,
+      .right {
+        flex: 1;
+        padding: 10px;
+        background-color: beige;
+      }
+
+      .center {
+        flex: 3;
+        background-color: antiquewhite;
+        display: flex;
+        padding: 10px;
+      }
+
+      .footer {
+        height: 15%;
+        background-color: cadetblue;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox 응용</h1>
+    <hr />
+    <a href="index.html">홈으로</a>
+
+    <div class="container">
+      <div class="header">Never</div>
+
+      <div class="nav">nav</div>
+
+      <div class="content">
+        <div class="left">aside</div>
+
+        <div class="center">article</div>
+
+        <div class="right">section</div>
+      </div>
+
+      <div class="footer">정보처리방침 정책고객센터 Never corp.</div>
+    </div>
+  </body>
+</html>
