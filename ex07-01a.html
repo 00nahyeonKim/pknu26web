@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 쇼핑몰</title>
+    <style>
+      h1 {
+        width: 100%;
+        text-align: center;
+        background-color: bisque;
+        color: white;
+        position: fixed;
+        top: 10px;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 20px;
+      }
+
+      /* h2 {
+            color: tan;
+            text-align: center;
+        } */
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 60px;
+      }
+      li {
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: whitesmoke;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .caption {
+        background-color: bisque;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: all 0.3s ease;
+        opacity: 0;
+      }
+      li:hover .caption {
+        transform: translateY(-205px);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <a href="index.html">홈으로</a><br />
+    <!-- div.box>h1{신상품 목록}+ul>(li>img+div.caption>h2{상품$}+p{상품$ 설명텍스트}+p{가격: 1$,12$원})*9 -->
+    <div class="box">
+      <h1>신상품 목록</h1>
+      <ul>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAzMzFfMjUw%2FMDAxNzQzNDIzOTU4MjM3.LoBAd5hkxPcNXMvRmrGz7iciL-Qwx1Gy04IYorg_0Gcg.bMpLJbu2cVkRtQnKrNxskyVZGj4y99xuyfgd2bXtVyUg.PNG%2Fimage.png&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품1</h2>
+            <p>상품1 설명텍스트</p>
+            <p>가격: 11,121원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20251029_210%2F1761703456000gRGhY_JPEG%2F4914884975195940_331679087.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품2</h2>
+            <p>상품2 설명텍스트</p>
+            <p>가격: 12,122원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20241112_28%2F17314219751186aJgX_JPEG%2F65554833253683976_1906404554.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품3</h2>
+            <p>상품3 설명텍스트</p>
+            <p>가격: 13,123원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20241112_220%2F1731407687735Yd76Y_JPEG%2F3423775858778473_122111370.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품4</h2>
+            <p>상품4 설명텍스트</p>
+            <p>가격: 14,124원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_8984607%2F89846073013.1.jpg&type=f372_372"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품5</h2>
+            <p>상품5 설명텍스트</p>
+            <p>가격: 15,125원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20241112_49%2F17314121279250qvLo_JPEG%2F65544932065193883_1482277452.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품6</h2>
+            <p>상품6 설명텍스트</p>
+            <p>가격: 16,126원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_5556721%2F55567216456.20250701011449.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품7</h2>
+            <p>상품7 설명텍스트</p>
+            <p>가격: 17,127원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20241113_252%2F1731425478940iIT2l_JPEG%2F4371290078029028_1230161685.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품8</h2>
+            <p>상품8 설명텍스트</p>
+            <p>가격: 18,128원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20251019_40%2F1760803682301TKg1v_JPEG%2F14398594419765205_1097364595.jpg&type=a340"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품9</h2>
+            <p>상품9 설명텍스트</p>
+            <p>가격: 19,129원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
