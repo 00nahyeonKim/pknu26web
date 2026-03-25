@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학점 계산기</title>
+  </head>
+  <body>
+    <script>
+      // 사용자에게 점수를 입력받음
+      // prompt의 두 번째 인자 1은 기본값 (입력창에 미리 들어있는 값)
+      // * 1을 통해 문자열을 숫자로 변환
+      const inp = prompt("점수를 입력하세요.", 1) * 1;
+
+      // 학점을 저장할 변수
+      let grade = "";
+
+      // 조건문을 통해 학점 결정
+      // 100점은 A++ (최우선 조건)
+      if (inp === 100) {
+        grade = "A++";
+
+        // 90 이상이면 A
+      } else if (inp >= 90) {
+        grade = "A";
+
+        // 80 이상이면 B
+      } else if (inp >= 80) {
+        grade = "B";
+
+        // 70 이상이면 C
+      } else if (inp >= 70) {
+        grade = "C";
+
+        // 60 이상이면 D
+      } else if (inp >= 60) {
+        grade = "D";
+
+        // 그 외는 F
+      } else {
+        grade = "F";
+      }
+
+      // 콘솔에 학점 출력
+      console.log(grade);
+
+      // 알림창으로 학점 출력
+      alert(`당신의 학점은 ${grade}입니다.`);
+
+      // 웹 페이지에 결과 출력
+      document.write(`<h2>${inp}점의 학점은 ${grade}입니다.</h2>`);
+    </script>
+  </body>
+</html>

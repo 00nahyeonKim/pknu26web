@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과일목록관리</title>
+  </head>
+  <body>
+    <script>
+      const box = ["딸기", "바나나", "사과", "수박", "키위", "포도"];
+      const del = prompt(box + " 중 제거하고 싶은 품목을 입력하세요.");
+      const choice = box.indexOf(del);
+
+      if (choice == -1) {
+        alert("찾는 과일이 없습니다.");
+      } else {
+        box.splice(choice, 1);
+      }
+
+      const app = prompt(box + " 외에 추가하고 싶은 과일을 입력하세요.");
+      box.push(app);
+
+      for (let i; i < box.length; i++) {
+        if ((app = box[i])) {
+          alert("그 품목은 이미 있습니다.");
+        }
+      }
+
+      const list = `<h1>과일목록관리</h1><br><h2>정리된 품목은 ${box}입니다.</h2>`;
+      document.body.innerHTML = list;
+    </script>
+  </body>
+</html>

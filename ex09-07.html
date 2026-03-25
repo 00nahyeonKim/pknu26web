@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const todo = ["우유구매"];
+      todo[1] = "커피구매";
+      todo.push("저녁식사");
+      todo.push("일찍자기");
+      console.log(todo);
+      //   slice
+      console.log(todo, todo.slice(0, 2));
+
+      //   splice
+      todo.splice(0, 0, "꿈꾸기");
+      todo.splice(1, 2, "수술1", "수술2", "수술3");
+      todo.splice(1, 2);
+      todo.splice(todo.length, 0, "끝");
+      console.log(todo);
+    </script>
+  </body>
+</html>
