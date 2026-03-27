@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 문제2</title>
+  </head>
+  <body>
+    <script>
+      let list = `<h2>시작부터 끝값까지 모든값 더하기`;
+      const a = Number(prompt("시작값을 입력하세요"));
+      const b = Number(prompt("끝값을 입력하세요"));
+
+      let sum = 0;
+
+      for (let i = a; i <= b; i++) {
+        sum += i;
+      }
+
+      list += `<h2>${a}부터${b}까지의 합은 ${sum}입니다.<h2>`;
+      document.body.innerHTML = list;
+    </script>
+  </body>
+</html>
